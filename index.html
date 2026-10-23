@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Page</title>
+
+</head>
+
+  <body>
+    <header>
+        <h1>STUDENT REGISTRATION PAGE</h1>
+    </header>
+
+<main>
+    <section>
+        <h2>Registration Form</h2>
+        <p>Please fill out the form below.</p>
+
+      <form id="registerForm">
+
+        <label for="name"><b>Full Name</b></label>
+        <input type="text" id="name" pattern="[A-Za-z ]+" title="Please enter letters only" required><br><br>
+
+        <label for="matricNo"><b>Matric Number</b></label>
+        <input type="text" id="matricNo" inputmode="numeric" pattern="[0-9]+" title="Numbers only" required><br><br>
+
+        <label for="department"><b>Department</b></label>
+        <select id="department" required>
+          <option value="">SELECT</option>
+          <option value="CSC">COMPUTER SCIENCE</option>
+          <option value="SWE">SOFTWARE ENGINEERING</option>
+          <option value="CYS">CYBERSECURITY</option>
+          <option value="IT">INFORMATION TECHNOLOGY</option>
+          <option value="ICT">INFORMATION COMMUNICATION TECHNOLOGY</option>
+          <option value="DSC">DATA SCIENCE</option>
+          <option value="IFS">INFORMATION SYSTEMS</option>
+          
+        </select><br><br>
+
+        <label for="email"><b>Email</b></label>
+        <input type="email" id="email" required><br><br>
+
+        <label for="phone"><b>Phone Number:</b></label>
+        <input type="tel" id="phone" name="phone" inputmode="numeric" pattern="[0-9]{11}" maxlength="11" title="Enter an 11 digit phone number" required><br><br>
+
+        <label for="gender"><b>Gender:</b></label>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female" required>
+        <label for="female">Female</label><br><br>
+
+        <label for="programme"><b>Programme</b></label>
+        <select id="programme" required>
+          <option value="">SELECT</option>
+          <option value="FT">FULL-TIME</option>
+          <option value="WK">WEEKDAY</option>
+          <option value="WKD">WEEKEND</option>
+          
+          </select><br><br>
+
+          
+
+            
+          <button type="submit">Submit Form</button>
+          <button type="reset">Reset Form</button>
+        </form>
+    </section>
+  </main>
+
+</body>
+</html>
